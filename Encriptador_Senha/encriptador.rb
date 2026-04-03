@@ -1,9 +1,19 @@
 puts "Bem-vindo ao Encriptador de Senhas!"
 puts
+loop do
 # Solicita ao usuário se deseja encriptar ou desencriptar uma senha
-puts "Deseja Encriptar ou Desencriptar uma senha? (Digite '1' para Encriptar ou '2' para Desencriptar)"
+puts "---------------Menu Principal---------------"
+puts "1 - Encriptar senha"
+puts "2 - Desencriptar senha"
+puts "3 - Sair"
+puts "---------------------------------------------"
 opcao = gets.chomp
 #If para verificar a opção escolhida pelo usuário e solicitar a senha correspondente
+if opcao == "3"
+    puts "Sistema encerrado. Até a próxima!"
+    break
+end
+
 if opcao == "1"
     puts "Me informe a senha que deseja encriptar: "
     senha = gets.chomp
@@ -24,6 +34,7 @@ if opcao == "1"
         end
     end
 end
+
 if opcao == "2"
     puts "Me informe a senha que deseja desencriptar: "
     senha = gets.chomp
@@ -45,7 +56,6 @@ if opcao == "2"
         end
     end
 end
-
 
 # Exibe a senha encriptada
 puts "A senha encriptada é: #{senha_caracteres.join}"
