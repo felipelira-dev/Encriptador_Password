@@ -1,4 +1,4 @@
-===== EncrypTRuby v1.0 =====
+# ===== EncrypTRuby v1.0 =====
 🔐 EncrypTRuby v1.0
 O EncrypTRuby é um software de criptografia via linha de comando (CLI) focado em segurança básica e manipulação de fluxos de dados. Utiliza o algoritmo da Cifra de César com uma abordagem moderna para tratamento de caracteres alfanuméricos e preservação de integridade de texto.
 
